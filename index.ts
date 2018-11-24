@@ -7,7 +7,7 @@ const nombre = "Alberto";
 
 console.log(`Mi nombre es ${nombre}`);
 
-const server = new Server();
+const server = Server.instance;
 
 // Body parser
 server.app.use(bodyParser.urlencoded({extended:true}));
